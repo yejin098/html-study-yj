@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals_making.css" />
+    <link rel="stylesheet" href="style_making.css" />
+  </head>
+  <body>
+     <!-- 상단 메뉴 바 -->
+     <header id="navbar">
+      <div class="logo">MyPortfolio</div>
+      <div class="menu-container">
+          <div class="menu-button">☰ Menu</div>
+          <ul class="menu-list">
+              <li><a href="index.html">Main</a></li>
+              <li><a href="making.html">Making</a></li>
+              <li><a href="allofmyworks.html">All of my projects</a></li>
+          </ul>
+      </div>
+  </header>
+</div>
+
+  <!-- 상단 고정 메뉴바 -->
+  <header class="top-menu">
+      <div class="menu-btn" onclick="toggleMenu()">Menu</div>
+      <ul class="menu-list" id="menuList">
+          <li><a href="index.html">Main</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="etc.html">Etc</a></li>
+      </ul>
+  </header>
+
+  <script>
+    // 메뉴 버튼 클릭 시 메뉴 열기/닫기
+    const menuButton = document.querySelector('.menu-button');
+    const menuList = document.querySelector('.menu-list');
+
+    menuButton.addEventListener('click', function(e) {
+        e.stopPropagation(); // 이벤트 버블링 방지
+        menuList.classList.toggle('active'); // 메뉴 열기/닫기
+    });
+
+    // 메뉴 외부 클릭 시 메뉴 닫기
+    document.addEventListener('click', function(e) {
+        if (!menuList.contains(e.target)) {
+            menuList.classList.remove('active');
+        }
+    });
+</script>
+
+    <div class="making">
+      <div class="view">
+        <div class="property">
+          <div class="div">
+            <img class="img" src="img/image-2.svg" />
+        
+          </div>
+        </div>
+        <div class="image-wrapper"><img class="image" src="img/image-3.svg" /></div>
+      </div>
+      <div class="text-wrapper-4">Making Story</div>
+      <div class="group">
+        <div class="ellipse"></div>
+        <div class="text-wrapper-5">포트폴리오 레퍼런스 수집</div>
+      </div>
+      <div class="group-2">
+        <div class="ellipse-2"></div>
+        <div class="text-wrapper-5">나의 셀링 포인트?</div>
+      </div>
+      <div class="group-3">
+        <div class="ellipse"></div>
+        <div class="text-wrapper-5">활동 내역 요약</div>
+      </div>
+      <div class="group-4">
+        <div class="ellipse"></div>
+        <div class="text-wrapper-5">‘과제’로써의 포트폴리오</div>
+      </div>
+      <div class="https-brunch-co-kr">주 참고 자료<br />https://brunch.co.kr/@new-una/24</div>
+      <p class="p">
+        제작 시 포인트<br />앞으로 활용 가능하도록 가변적일 것<br />시각적으로 정돈되고 문장형 글보다 키위드 중심일
+        것<br />시간 순서대로보다 중요도, 최신 순<br />논리 흐름에 맞게 필요에 따라 조립하는 포트폴리오<br />패턴화 방법
+        통일을 통한 효율적 작성/파악<br />어필 포인트와 그를 뒷받침하는 정량적인 이력
+      </p>
+      <p class="git-bash-vercel">
+        일반적인 포트폴리오:<br />기업 분석을 바탕으로 기업의 니즈와 본인의 역량을 일치시켜 어필<br /><br />‘과제’로의
+        포트폴리오의 목적?<br />Git Bash와 Vercel의 기술적 활용 <br />스스로의 활동을 정리하고 본인의 핵심 역량을
+        추출하는 연습<br />실제 구직시장에서 활용 가능한 포트폴리오 제작
+      </p>
+      <p class="text-wrapper-6">
+        모든 활동을 시간 순으로 나열<br />지난 활동과 관심분야 브레인 스토밍을 바탕으로 키워드 추출<br /><br />지금까지의
+        활동은 흥미 중심의 탐색형 활동이 대다수<br />충분한 탐색을 바탕으로 관심 분야와 관련 기업 조사 필요<br />필요
+        역량 및 조건에 대한 파악을 기반으로 포트폴리오를 전략적으로 만들어나가야 함
+      </p>
+      <p class="text-wrapper-7">
+        지역을 기반으로 한 활동 다수 <br />관심 분야의 일관성 존재 - 환경문제, 지속가능한발전, 도시재생<br />협업과
+        데이터 분석을 위한 툴 사용법 학습<br />팀프로젝트와 동아리 등을 통한 프로젝트 기획 및 운영능력
+      </p>
+      <div class="group-5">
+        <div class="ellipse"></div>
+        <div class="text-wrapper-5">그래서 이 포트폴리오는?</div>
+      </div>
+      <p class="HTML-CSS-vercel">
+        피그마로 제작, HTML 및 CSS 변환, Vercel을 통한 공유<br />주요 활동들을 모두 정리해 모아둔 아카이브<br />포트폴리오가
+        필요하면 언제든 이를 기반으로 편집해 만들어낼 수 있는 기본 소스<br />앞으로의 진로방향 및 계획 설정에서의
+        참고자료
+      </p>
+      <img class="prac-icon-off" src="prac_icon_off-1-48.png" />
+    </div>
+  </body>
+</html>

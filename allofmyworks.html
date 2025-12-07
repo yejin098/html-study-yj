@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals_all.css" />
+    <link rel="stylesheet" href="style_all.css" />
+  </head>
+  <body>
+     <!-- 상단 메뉴 바 -->
+     <header id="navbar">
+      <div class="logo">MyPortfolio</div>
+      <div class="menu-container">
+          <div class="menu-button">☰ Menu</div>
+          <ul class="menu-list">
+              <li><a href="index.html">Main</a></li>
+              <li><a href="making.html">Making</a></li>
+              <li><a href="allofmyworks.html">All of my projects</a></li>
+          </ul>
+      </div>
+  </header>
+</div>
+
+  <!-- 상단 고정 메뉴바 -->
+  <header class="top-menu">
+      <div class="menu-btn" onclick="toggleMenu()">Menu</div>
+      <ul class="menu-list" id="menuList">
+          <li><a href="index.html">Main</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="etc.html">Etc</a></li>
+      </ul>
+  </header>
+
+  <script>
+    // 메뉴 버튼 클릭 시 메뉴 열기/닫기
+    const menuButton = document.querySelector('.menu-button');
+    const menuList = document.querySelector('.menu-list');
+
+    menuButton.addEventListener('click', function(e) {
+        e.stopPropagation(); // 이벤트 버블링 방지
+        menuList.classList.toggle('active'); // 메뉴 열기/닫기
+    });
+
+    // 메뉴 외부 클릭 시 메뉴 닫기
+    document.addEventListener('click', function(e) {
+        if (!menuList.contains(e.target)) {
+            menuList.classList.remove('active');
+        }
+    });
+</script>
+    <div class="all-of-my-works">
+      <div class="keyword">
+        <div class="ellipse"></div>
+        <div class="text-wrapper">현장답사</div>
+        <div class="div">도시재생</div>
+        <div class="text-wrapper-2">상권분석</div>
+        <div class="text-wrapper-3">지속가능성</div>
+        <div class="text-wrapper-4">공공성</div>
+        <div class="text-wrapper-5">소셜믹스</div>
+        <div class="text-wrapper-6">지역</div>
+        <div class="text-wrapper-7">용인시</div>
+        <div class="text-wrapper-8">데이터</div>
+        <div class="text-wrapper-9">교통</div>
+        <div class="text-wrapper-10">사례연구</div>
+        <div class="text-wrapper-11">SDGs</div>
+        <div class="text-wrapper-12">환경</div>
+        <div class="text-wrapper-13">All of my works</div>
+      </div>
+      <div class="ellipse-2"></div>
+      <div class="ellipse-3"></div>
+      <div class="ellipse-4"></div>
+      <div class="ellipse-5"></div>
+      <div class="frame">
+        <div class="text-wrapper-14">2022</div>
+        <div class="text-wrapper-15">2023</div>
+        <div class="text-wrapper-16">2024</div>
+        <div class="text-wrapper-17">2025</div>
+        <div class="text-wrapper-13">All of my works</div>
+        <p class="best-practice">
+          대학생기후행동 단국대지부 세미나팀장
+          <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          경기지부 세미나팀원<br />대학생 기후행동 기후페스티벌 기획단<br />단냥펀치 디자인홍보부 부원<br />우수
+          글쓰기대회 수상<br />Best Practice 공모전 최우수상<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;대학생기후행동
+          팀장<br />한국정보인재개발원
+          <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;빅데이터
+          실무 2급 자격증<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;파이썬
+          프로그래밍 활용 능력 2급
+        </p>
+        <p class="element">
+          도시브랜드의 존속기간이 도시브랜드 인지도에 미치는 영향 연구 계획<br />부동산 입지분석; 다이소 명동역점,
+          명동본점<br />현대 도시문제 해결을 위한 도시재생; 신갈오거리 도시재생을 중심으로<br />광역버스 잔여좌석 예측
+          프로그램<br /><br />용인경전철 광교 연장 노선의 영통지역 경유 적절성 판단<br />용인경전철 인근거주의 편익과
+          비용의 체감; 소음 문제를 중심으로<br />김포 라베니체 현황과 활성화 방안 제안<br />신도시 단지계획 사례 분석;
+          1동탄
+        </p>
+        <p class="p">
+          시공인 현장답사 스터디<br />노들섬<br />수원 행궁동 도시재생<br />광화문 책광장<br />명동<br />서울고속버스터미널<br />죽전스타필드마켓
+        </p>
+        <p class="UAM-UBRC">
+          도심항공 모빌리티 UAM 도입 방향 제시<br />국토계획-환경계획의 통합관리<br />도시재생사례연구-수원시 연무동<br />성남시
+          벤처기업 육성 지원을 위한 스마트 헬스케어센터 제안<br />재산권 보호와 환경보전 사이의 갈등 ; 도시공원 일몰제와
+          그린벨트<br /><br />주거복지센터 조사보고서;성남<br />실버타운 사례연구; UBRC를 중심으로<br />용인시
+          버스네트워크 현황 분석 및 개선방향 제안(예정)
+        </p>
+        <p class="sns-CTL">
+          단냥펀치 공동회장 <br />시공인 관리부 팀원<br />sns 마케팅 분석 교육 수료 <br />디지털 워크스페이스 교육 수료
+          <br />용인 신갈 도시재생 주민역량강화 교육 수료 <br />CTL 자기성장공모전 최우수
+        </p>
+        <p class="text-wrapper-18">
+          단냥펀치 공동회장<br />시공인 관리부 팀원<br />한국건설관리학회 실무 아카데미 수료
+        </p>
+        <p class="global-village-NGO">
+          원어민 튜터링 &amp; Global Village<br />용인시 청청프로젝트 대학생 봉사자<br />기후행동 아이디어 경진대회
+          용인시장상<br />씨티-경희 NGO 인턴십 프로그램
+        </p>
+      </div>
+      <div class="view">
+        <div class="property">
+          <div class="view-2">
+            <img class="img" src="img/image-2.svg" />
+          </div>
+        </div>
+        <div class="image-wrapper"><img class="image" src="img/image-4.svg" /></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>Portfolio of Yejin</title>
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+     <!-- 상단 메뉴 바 -->
+     <header id="navbar">
+      <div class="logo">MyPortfolio</div>
+      <div class="menu-container">
+          <div class="menu-button">☰ Menu</div>
+          <ul class="menu-list">
+              <li><a href="index.html">Main</a></li>
+              <li><a href="making.html">Making</a></li>
+              <li><a href="allofmyworks.html">All of my projects</a></li>
+          </ul>
+      </div>
+  </header>
+</div>
+
+  <!-- 상단 고정 메뉴바 -->
+  <header class="top-menu">
+      <div class="menu-btn" onclick="toggleMenu()">Menu</div>
+      <ul class="menu-list" id="menuList">
+          <li><a href="index.html">Main</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="etc.html">Etc</a></li>
+      </ul>
+  </header>
+
+  <script>
+    // 메뉴 버튼 클릭 시 메뉴 열기/닫기
+    const menuButton = document.querySelector('.menu-button');
+    const menuList = document.querySelector('.menu-list');
+
+    menuButton.addEventListener('click', function(e) {
+        e.stopPropagation(); // 이벤트 버블링 방지
+        menuList.classList.toggle('active'); // 메뉴 열기/닫기
+    });
+
+    // 메뉴 외부 클릭 시 메뉴 닫기
+    document.addEventListener('click', function(e) {
+        if (!menuList.contains(e.target)) {
+            menuList.classList.remove('active');
+        }
+    });
+</script>
+
+    <div class="main">
+      <div class="frame">
+        <div class="keyword">
+          <div class="ellipse"></div>
+          <div class="group">
+            <p class="text-wrapper">데이터를 기반으로 한 문제 정의 능력</p>
+            <p class="div">지속가능한 발전을 <br />위한 문제 해결 능력</p>
+            <p class="p">지역 컨텐츠 발굴 및 <br />강화 프로젝트 기획 능력</p>
+            <div class="ellipse-2"></div>
+            <div class="ellipse-2"></div>
+            <div class="ellipse-3"></div>
+            <div class="cd-rom-disc">
+              <div class="vector-wrapper"><img class="vector" src="img/vector-11.svg" /></div>
+            </div>
+            <div class="stairs-ascend">
+              <div class="img-wrapper"><img class="vector-2" src="img/image.svg" /></div>
+            </div>
+            <div class="group-2">
+              <img class="vector-3" src="img/vector-2.svg" />
+              <img class="vector-4" src="img/vector-3.svg" />
+              <img class="vector-5" src="img/vector-6.svg" />
+              <img class="vector-6" src="img/vector-7.svg" />
+              <img class="vector-7" src="img/vector.svg" />
+              <img class="vector-8" src="img/vector-10.svg" />
+              <img class="vector-9" src="img/vector-5.svg" />
+            </div>
+          </div>
+          <div class="end">
+            <div class="text-wrapper-2">현장답사</div>
+            <div class="text-wrapper-3">도시재생</div>
+            <div class="text-wrapper-4">상권분석</div>
+            <div class="text-wrapper-5">지속가능성</div>
+            <div class="text-wrapper-6">공공성</div>
+            <div class="text-wrapper-7">소셜믹스</div>
+            <div class="text-wrapper-8">지역</div>
+            <div class="text-wrapper-9">용인시</div>
+            <div class="text-wrapper-10">데이터</div>
+            <div class="text-wrapper-11">교통</div>
+            <div class="text-wrapper-12">사례연구</div>
+            <div class="text-wrapper-13">SDGs</div>
+            <div class="text-wrapper-14">경전철</div>
+            <div class="text-wrapper-15">커뮤니케이션</div>
+            <div class="text-wrapper-16">환경</div>
+            <div class="text-wrapper-17">아이디어</div>
+          </div>
+          <div class="rectangle"></div>
+        </div>
+        <div class="group-3">
+          <img class="prac-icon-off" src="prac_icon_off-1-48.png" />
+          <div class="text-wrapper-18">지속가능한 발전을 하는 도시전문가</div>
+          <p class="div-2"><span class="span">정예진</span> <span class="text-wrapper-19">입니다.</span></p>
+        </div>
+        <img class="vector-10" src="img/vector-9.svg" />
+      </div>
+      <div class="element">
+        <div class="ellipse-4"></div>
+        <div class="ellipse-5"></div>
+        <div class="ellipse-6"></div>
+        <p class="text-wrapper-20">
+          직접 다양한 연구 대상 단지에 다양한 시간대에 방문 관찰 및 거주민과의 인터뷰를 통해 용인 경전철 인근거주의
+          편익과 비용 체감 정도를 파악했습니다.<br />조사 결과, 다른 문제에 비해 소음 문제를 더 체감했으며, 그 외 다른
+          비용을 포함해 교통비 절약이나 이동 편의성등의&nbsp;&nbsp;편익 역시 체감하는 정도가 낮음을 확인할 수
+          있었습니다.<br />그러나 실제로 용인경전철은 소음진동 기준치 이하의 시설로 추가적인 방음 시설 설치 의무는
+          없었으며, 앞으로 지어질 단지 차원에서 자체적으로 소음 문제에 대한 대응이 <br />요구됨을 확인할 수 있었습니다.
+        </p>
+        <div class="text-wrapper-21">Solution</div>
+        <img class="image" src="image-17-58.png" />
+        <img class="image-2" src="image-18-59.png" />
+        <img class="image-3" src="image-19-60.png" />
+        <img class="image-4" src="image-21-61.png" />
+        <img class="image-5" src="image-23-62.png" />
+      </div>
+      <div class="element-2">
+        <p class="text-wrapper-22">
+          소음과 진동의 관리는 쾌적한 주거환경 조성에 있어 필수적인 요소입니다. 중량전철 건설 이후 시도된 경량전철 사례
+          중 하나인 용인 경전철의 인근 거주는 <br />이동 편의성이라는 편익을 얻을 것으로 예상되는 동시에 경전철의
+          특성으로 인한 비용도 발생할 것으로 예상됩니다.
+        </p>
+        <div class="text-wrapper-23">Background</div>
+        <p class="text-wrapper-24">용인 경전철 인근 거주의 편익과 비용 체감; 소음 문제를 중심으로</p>
+        <p class="text-wrapper-25">
+          용인시 경전철 인근 공동주택 거주의 편익과 비용의 체감을 파악하고, 앞으로 도시철도로써 경전철 도입 과정에서
+          개선점을 제안하는 프로젝트입니다.
+        </p>
+        <img class="image-6" src="image-15-69.png" />
+        <img class="image-7" src="image-14-68.png" />
+        <div class="group-4">
+          <div class="group-5">
+            <div class="ellipse-7"></div>
+            <p class="text-wrapper-26">긍정적 요인만을 전제로 한 수요예측</p>
+            <p class="text-wrapper-27">
+              운영적자, 부실공사 등을 이유로&nbsp;&nbsp;준공확인 거부 <br />자체 감리 및 안전검사에서 안전성 확인
+              소음민원에 대한 책임을 사업자에게&nbsp;&nbsp;전가하려 준공확인을 지연
+            </p>
+          </div>
+          <div class="group-6">
+            <div class="ellipse-7"></div>
+            <div class="text-wrapper-26">LIM 방식 채택</div>
+            <p class="text-wrapper-28">
+              - 경량전철 중 가장 큰 차량폭의 고중량&nbsp;&nbsp;차량으로 상하부 구조물이 계획보다
+              커져&nbsp;&nbsp;도시경관 저해<br />- 철제 차륜으로 소음과 진동이 적다는&nbsp;&nbsp;장점의 약화(시범운행 시
+              집단 민원)
+            </p>
+          </div>
+          <div class="group-7">
+            <div class="ellipse-8"></div>
+            <div class="text-wrapper-29">용인시의 준공확인 거부</div>
+            <p class="text-wrapper-30">
+              대규모 택지개발, 행정타운 조성,&nbsp;&nbsp;에버랜드와의 사업 공조 등 긍정적인&nbsp;&nbsp;요인만을 전제로
+              통행 발생에 대한&nbsp;&nbsp;다중회귀분석 및 최적전략통행&nbsp;&nbsp;배정모형의 통행배정방법 사용
+            </p>
+          </div>
+        </div>
+        <div class="text-wrapper-31">문제정의</div>
+      </div>
+      <div class="element-3">
+        <p class="text-wrapper-25">
+          신교통수단인 도심항공모빌리티(UAM)의 성공적인 도입을 위하여 기존 계획을 검토하고 새로운 도입 단계 및 방향성을
+          제시하는 프로젝트입니다.
+        </p>
+        <p class="text-wrapper-32">도심항공모빌리티 UAM 도입 방향 제시</p>
+        <img class="image-8" src="image-10-87.png" />
+        <img class="image-9" src="image-11-88.png" />
+        <div class="text-wrapper-33">Background</div>
+        <p class="UAM-UAM">
+          자동화, 탈탄소화, 통합화, 공유화와 같은 모빌리티 대전환이 예상되는 시점에서 자율자동차에 이어
+          도심항공모빌리티(이하 UAM) 도입에 대한 관심이 높아지고 있습니다.<br />우리나라에서도 2020년부터 중장기
+          교통계획에 UAM을 포함하여 국정 과제로 추진하고 있으나 실제 교통수단 도입에 있어서 다양한 제약이 예상됩니다.
+        </p>
+        <div class="group-8">
+          <div class="ellipse-9"></div>
+          <div class="text-wrapper-26">제도적 준비의 부족</div>
+        </div>
+        <div class="group-9">
+          <div class="ellipse-7"></div>
+          <div class="text-wrapper-26">안정적 서비스 공급의 불확실성</div>
+        </div>
+        <div class="group-10">
+          <div class="ellipse-10"></div>
+          <div class="text-wrapper-34">수요 및 수익성의 불확실성</div>
+          <p class="text-wrapper-35">
+            현실적 여건을 고려한 실제 수익 모델 및 비즈니스 전망 파악의 부족<br />교통수단 수요 데이터 및 측정 도구 부족
+            등<br />전국적인 차원의 조사 및 연구, 현실적인 모델 개발 등의 기술적 접근과 노력 요구
+          </p>
+          <p class="text-wrapper-36">
+            실시간 수요대응형 서비스 형태로 시행의 높은 가능성에 따른 정시성, 효율성의 문제<br />기술적인 차원의 연구와
+            많은 시범 비행 요구
+          </p>
+          <p class="text-wrapper-37">
+            동등한 위상의 기존 법률 사이의 대립<br />안전 및 소음 진동 기준과 사생활 침해 대책 미비 등<br />법률적
+            차원의 체계 정비와 실무적인 차원에서의 민관협력 요구
+          </p>
+        </div>
+        <div class="text-wrapper-38">국내 동향 파악</div>
+        <div class="text-wrapper-39">문제 정의</div>
+      </div>
+      <div class="element-4">
+        <p class="text-wrapper-20">
+          UAM 도입에 대한 인식을 대중교통 이용자를 대상으로 한 인터뷰로 파악하고, <br />이를 바탕으로 UAM 도입을 위해
+          필요한 추가 과제를 설정하여 더 구체적인 UAM 도입 로드맵을 제시했습니다.
+        </p>
+        <div class="text-wrapper-21">Solution</div>
+        <img class="image-10" src="image-12-108.png" />
+        <div class="text-wrapper-40">UAM 인식 파악</div>
+        <img class="image-11" src="image-13-110.png" />
+        <div class="group-11">
+          <div class="group-12">
+            <div class="ellipse-7"></div>
+            <p class="text-wrapper-26">운영에서의 수요 방향성 변경: 개인의 이동 -&gt; 공익적 업무 수행</p>
+            <p class="text-wrapper-41">
+              수도권 외 지역의 열악한 광역 단위의 대중교통 이용 편의성<br />기존의 인프라를 활용하여 비용 절감 및 고정
+              노선의 준다이나믹형 운행 과정에서의 데이터 수집의 가능성
+            </p>
+          </div>
+          <div class="group-13">
+            <div class="ellipse-7"></div>
+            <p class="text-wrapper-26">운행 거리에서의 방향성 변경: 단거리 운영 -&gt; 장거리 운영</p>
+            <p class="text-wrapper-42">
+              기술의 세계적 경쟁력 측면에서 중장거리 운영을 목표로 연구 개발 및 시범운행의 필요성<br />적극적 배터리
+              기술 연구 및 투자유치 필요
+            </p>
+          </div>
+          <div class="group-14">
+            <div class="ellipse-10"></div>
+            <p class="text-wrapper-34">
+              운행 지역에서의 방향성 변경: 수도권, 도심 내 운영 -&gt; 수도권 외 지역, 광역 운영
+            </p>
+            <p class="text-wrapper-37">
+              특수한 경우를 제외하고는 높은 이용 요금 형성에 따라 수요가 즐어드는 양상<br />기술적 수준 충족, 법률적
+              기반 마련, 사회적 인식 준비 없이는 수익 모델 개발의 현ㅅ리적 어려움<br />공익적 업무 수행에 우선하여
+              단계적 도입 및 확대: 의료 및 소방업무
+            </p>
+          </div>
+        </div>
+        <div class="text-wrapper-43">방향성 제안</div>
+      </div>
+      <div class="resume">
+        <div class="ellipse-11"></div>
+        <div class="text-wrapper-44">정예진</div>
+        <div class="text-wrapper-45">RESUME</div>
+        <div class="group-wrapper">
+          <div class="group-15">
+            <div class="text-wrapper-46">Birth</div>
+            <div class="text-wrapper-47">2003.03.07.</div>
+            <div class="text-wrapper-48">Education</div>
+            <div class="text-wrapper-49">단국대학교 도시계획부동산학부 재학</div>
+            <p class="text-wrapper-50">한국 건설관리학회 실무 아카데미 수료</p>
+            <p class="SNS">디지털 워크스페이스 &amp; SNS 마케팅 분석 교육 수료</p>
+            <div class="text-wrapper-51">Active</div>
+            <div class="text-wrapper-52">Contact</div>
+            <div class="text-wrapper-53">3222yejin@dankook.ac.kr</div>
+          </div>
+        </div>
+        <div class="element-5">
+          <div class="group-16">
+            <div class="group-17">
+              <div class="text-wrapper-54">Career</div>
+              <div class="text-wrapper-55">2025</div>
+              <div class="text-wrapper-56">씨티-경희대 NGO 인턴십 프로그램</div>
+            </div>
+            <div class="group-18">
+              <div class="text-wrapper-57">Awards</div>
+              <div class="text-wrapper-58">2025</div>
+              <div class="text-wrapper-59">2023</div>
+              <div class="text-wrapper-60">2022</div>
+              <div class="text-wrapper-61">기후행동 아이디어 경진대회 용인시장상</div>
+              <div class="text-wrapper-62">CTL 자기성장 공모전 최우수상</div>
+              <div class="text-wrapper-63">Best Practice 공모전 최우수상</div>
+              <div class="text-wrapper-64">우수글쓰기대회 수상</div>
+            </div>
+            <div class="group-19">
+              <div class="text-wrapper-57">Tools</div>
+              <p class="element-6">
+                <span class="text-wrapper-65">빅데이터 실무 2급</span>
+                <span class="text-wrapper-66">(한국정보인재개발원)<br /></span>
+                <span class="text-wrapper-65"><br />파이썬 프로그래밍 활용능력 2급</span>
+                <span class="text-wrapper-66">(한국정보인재개발원)</span>
+              </p>
+              <div class="text-wrapper-67">Figma</div>
+              <div class="text-wrapper-68">Arc GIS</div>
+              <div class="text-wrapper-69">R</div>
+              <div class="text-wrapper-70">Python</div>
+              <div class="text-wrapper-70">Python</div>
+              <div class="component-wrapper">
+                <div class="component">
+                  <div class="state-start">
+                    <img class="rectangle-2" src="img/rectangle-3-9.png" />
+                    <img class="rectangle-3" src="img/rectangle-4-7.png" />
+                    <div class="text-wrapper-71">3/5</div>
+                  </div>
+                  <div class="state-end">
+                    <img class="rectangle-4" src="img/rectangle-3.png" />
+                    <img class="rectangle-4" src="img/image.png" />
+                    <div class="text-wrapper-71">4/5</div>
+                  </div>
+                </div>
+              </div>
+              <div class="div-wrapper">
+                <div class="component">
+                  <div class="state-start">
+                    <img class="rectangle-2" src="img/rectangle-3-2.png" />
+                    <img class="rectangle-3" src="img/rectangle-4-5.png" />
+                    <div class="text-wrapper-71">3.5/5</div>
+                  </div>
+                  <div class="state-end">
+                    <img class="rectangle-5" src="img/rectangle-3-3.png" />
+                    <img class="rectangle-5" src="img/rectangle-4-6.png" />
+                    <div class="text-wrapper-71">3.5/5</div>
+                  </div>
+                </div>
+              </div>
+              <div class="frame-2">
+                <div class="component">
+                  <div class="state-start">
+                    <img class="rectangle-2" src="img/rectangle-3-7.png" />
+                    <img class="rectangle-3" src="img/rectangle-4-3.png" />
+                    <div class="text-wrapper-71">4/5</div>
+                  </div>
+                  <div class="state-end">
+                    <img class="rectangle-6" src="img/rectangle-3-10.png" />
+                    <img class="rectangle-6" src="img/rectangle-4.png" />
+                    <div class="text-wrapper-71">4/5</div>
+                  </div>
+                </div>
+              </div>
+              <div class="frame-3">
+                <div class="component">
+                  <div class="state-start">
+                    <img class="rectangle-2" src="img/rectangle-3-8.png" />
+                    <img class="rectangle-3" src="img/rectangle-4-4.png" />
+                    <div class="text-wrapper-71">3.5/5</div>
+                  </div>
+                  <div class="state-end">
+                    <img class="rectangle-7" src="img/rectangle-3-6.png" />
+                    <img class="rectangle-7" src="img/rectangle-4-9.png" />
+                    <div class="text-wrapper-71">3.5/5</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-wrapper-72">Acess</div>
+          <div class="frame-4">
+            <div class="component">
+              <div class="state-start">
+                <img class="rectangle-2" src="img/rectangle-3-4.png" />
+                <img class="rectangle-3" src="img/rectangle-4-8.png" />
+                <div class="text-wrapper-71">3.5/5</div>
+              </div>
+              <div class="state-end">
+                <img class="rectangle-8" src="img/rectangle-3-5.png" />
+                <img class="rectangle-8" src="img/rectangle-4-2.png" />
+                <div class="text-wrapper-71">3.5/5</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="element-7">
+          <div class="text-wrapper-73">Projects</div>
+          <div class="rectangle-9"></div>
+          <div class="rectangle-10"></div>
+          <div class="rectangle-11"></div>
+          <div class="rectangle-12"></div>
+          <div class="rectangle-13"></div>
+          <div class="text-wrapper-74">실버타운 사례연구; UBRC를 중심으로</div>
+          <p class="text-wrapper-75">
+            국내외 최초의 UBRC 사례(유당마을, 명지 엘펜하임, 그린힐스(ISU), 미라벨라(ASU))를 중심으로, 타 실버타운 모델
+            대비 UBRC 모델의 장단점을 파악하고 국내 새로운 실버타운 개발주체로의 대학을 검토
+          </p>
+          <p class="text-wrapper-76">
+            수원연무동의 스마트 도시재생을 포함한 도시재생사업의 계획과 현황을 알아보고, 스마트 도시재생 및 지속가능하며
+            성공적인 도시재생을 위한 필요조건을 확인
+          </p>
+          <p class="text-wrapper-77">
+            환경관리 문제에 있어 사익과 공익사이의 갈등을 조정하기 위한 정부 및 지자체의 노력을 도시공원 일몰제 사례를
+            통해 검토 이를 바탕으로 그린벨트 해제 이슈를 파악
+          </p>
+          <p class="text-wrapper-78">
+            신갈도시재생사업 사례연구에서 시작하여, 직접 주민역량강화 교육에 참여해 수료하는 과정을 통해 지역 도시재생의
+            개관 및 실태를 파악, 지역 주민이 주체가 되는 도시재생사업을 위한 구조적 한계 파악 및 앞으로의 방향 제시
+          </p>
+          <p class="text-wrapper-79">
+            용인경전철 역사와 레일 인근에 위치한 아파트 거주의 실태를 파악하고 이를 중재하기 위한 지자체의 노력과
+            앞으로의 방향을 제시
+          </p>
+          <div class="text-wrapper-80">수원 연무동 도시재생사업 사례연구</div>
+          <p class="text-wrapper-81">재산권 보호와 환경보전 사이의 갈등; <br />도시공원 일몰제와 그린벨트</p>
+          <div class="text-wrapper-82">신갈 도시재생사업 참여관찰 프로젝트</div>
+          <p class="text-wrapper-83">용인경전철 인근지역의 편익과 비용의 체감; 소음 문제를 중심으로</p>
+          <div class="ellipse-12"></div>
+        </div>
+        <div class="rectangle"></div>
+      </div>
+      <div class="frame-5">
+        <div class="ellipse-13"></div>
+        <img class="line" src="img/line-1.svg" />
+        <div class="text-wrapper-84">Contact</div>
+        <div class="text-wrapper-85">E mail</div>
+        <div class="text-wrapper-86">3222yejin@dankook.ac.kr</div>
+        <div class="text-wrapper-87">Phone</div>
+        <div class="text-wrapper-88">010-0000-0000</div>
+        <div class="text-wrapper-89">Instagram</div>
+        <div class="text-wrapper-90">10:00 ~ 20:00</div>
+        <div class="text-wrapper-91">@putinstagramidhere</div>
+        <div class="text-wrapper-92">정예진</div>
+        <p class="text-wrapper-93">© 2025 정예진. All rights reserved.</p>
+        <img class="vector-11" src="img/vector-12.svg" />
+      </div>
+      <img class="bar" src="img/bar.svg" />
+      <img class="menubutton" src="img/menubutton.svg" />
+    </div>
+  </body>
+</html>
